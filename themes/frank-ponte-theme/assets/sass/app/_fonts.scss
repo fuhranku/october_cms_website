@@ -1,0 +1,9 @@
+// Font-face importer
+@import "app/font-face";
+
+// Website main font
+@include font-face('quicksand','/themes/frank-ponte-theme/assets/fonts/Quicksand/Quicksand-Light',300, null, ttf);
+@include font-face('quicksand','/themes/frank-ponte-theme/assets/fonts/Quicksand/Quicksand-Regular',400, null, ttf);
+@include font-face('quicksand','/themes/frank-ponte-theme/assets/fonts/Quicksand/Quicksand-Medium',500, null, ttf);
+@include font-face('quicksand','/themes/frank-ponte-theme/assets/fonts/Quicksand/Quicksand-SemiBold',600, null, ttf);
+@include font-face('quicksand','/themes/frank-ponte-theme/assets/fonts/Quicksand/Quicksand-Bold',700, null, ttf);

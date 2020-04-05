@@ -1,0 +1,51 @@
+description = "Header for main page sections"
+==
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item {% if this.page.title == 'Tutorials' %} active {% endif %}">
+                <a class="nav-link" href="{{ 'tutorials'|page }}">Tutoriales</a>
+            </li>
+            <li class="nav-item {% if this.page.title == 'Demos' %} active {% endif %}">
+                <a class="nav-link" href="{{ 'demos'|page }}">Demos</a>
+            </li>
+            <li class="nav-item {% if this.page.title == 'Blog' %} active {% endif %}">
+                <a class="nav-link" href="{{ 'blog'|page }}">Blog</a>
+            </li>
+            <li class="nav-item {% if this.page.title == 'About' %} active {% endif %}">
+                <a class="nav-link" href="{{ 'about'|page }}">Acerca de mí</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="{{'index'|page}}">Frank Ponte</a>
+        <button class="navbar-toggler ml-3" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav social-media">
+                <li class="nav-item">
+                    <a class="nav-link nav-social-icon" href="//instagram.com/fuhranku" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-social-icon" href="//www.linkedin.com/in/fuhranku" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-social-icon" href="//github.com/fuhranku" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+            <li class="nav-item ml-3">
+                <a class="nav-link btn btn-success font-weight-bold" href="{{'contact_me' |page}}">Contáctame</a>
+            </li>
+        </ul>
+    </div>
+</nav>

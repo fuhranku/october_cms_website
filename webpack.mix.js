@@ -20,7 +20,11 @@ mix.browserSync({
     proxy: 'localhost:8000',
     host: 'localhost:8000',
     notify: false,
-    files: ['./themes/frank-ponte-theme/assets/compiled/*.css','./themes/frank-ponte-theme/**/*.htm','./themes/frank-ponte-theme/assets/compiled/*.js']
+    files: [
+        './themes/frank-ponte-theme/assets/compiled/*.css',
+        './themes/frank-ponte-theme/**/*.htm',
+        './themes/frank-ponte-theme/assets/compiled/*.js',
+    ]
 })
 
 // Full API
